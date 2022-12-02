@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>用户登录</title>
+		<style>
+			body {
+				margin: 10px ;
+			}
+
+			table {
+				width: 100%;
+				height: 100%;
+				background-color: rgb(250,250,250);
+			}
+			
+			#tableFrom{
+				text-align: center;
+			}
+			.logo{
+				width: 100%;
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="100%">
+			<tr>
+				<td><img src="Imgs/top0.jpg" class="logo"></td>
+			</tr>
+			<tr>
+				<td>
+					<table id="tableFrom">
+					<tr>
+						<td>
+							<form action="./emp?type=login" method="post">
+								用户名称:<input type="text" name="name" required/><br>
+								登录密码:<input type="password" name="pwd" required/><br><br>
+										<input type="submit" value="提 交"/><input type="reset" value="重 填" />
+							</form>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

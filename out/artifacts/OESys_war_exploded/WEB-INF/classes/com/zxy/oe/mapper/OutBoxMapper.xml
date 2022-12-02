@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zxy.oe.mapper.OutBoxMapper">
+
+    <select id="selectLetterByEmpId" resultType="outbox">
+        select * from outbox where receiveIdList = #{empId}
+    </select>
+
+    <delete id="deleteLetter">
+        delete from outbox where id = #{Lid}
+    </delete>
+
+    <update id="updateChecked">
+        update outbox set checked = 1 where id = #{Lid}
+    </update>
+
+
+
+</mapper>
